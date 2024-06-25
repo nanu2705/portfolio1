@@ -1,0 +1,431 @@
+:root {
+  --variable-name: value;
+}
+selector {
+  property: var(--variable-name);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #cccddc;
+  --primary-color: #050505;
+  --secondary-color: #ff0000;
+  --primary-shadow: #000000;
+  --secondary-shadow: #000000;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;  
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #cccddc;
+}
+
+nav h1 {
+  /* color: var(--primary-color); */
+  color:rgb(255, 255, 255);
+
+}
+
+nav a {
+  /* color: var(--primary-color); */
+  color:rgb(255, 255, 255);
+
+  transition: var(--transition);
+}
+nav a:hover {
+  /* color: var(--secondary-color); */
+  color:rgb(255, 255, 255);
+
+  /* border-bottom: 2px solid var(--secondary-color); */
+  border-bottom: 2px solid var(--bg-color);
+
+}
+
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+} 
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
+
+
+.hero img {
+  height: 37.5rem;
+  width: 37.5rem;
+  border-radius: 500px;
+  margin-right: 100px;
+}
+
+.bio {
+  width: 40rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+.more-about {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+  background-color: #cccddc;
+  border: solid;
+  border-radius: 20px;
+}
+
+
+.more-about h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+  background-color: #cccddc;
+}
+
+.more-about p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+  background-color: #cccddc;
+
+}
+
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+
+.icon-card {
+  background-color: #fff;
+  /* background-color: #cccddc; */
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+
+.projects {
+  background-color: var(--bg-color);
+  /* background-color: #cccddc; */
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+
+.project-container p {
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+  background-color: #fff;
+  /* background-color: #cccddc; */
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+
+
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+
+
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: var(--primary-color);
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset var(--primary-color);
+  font-size: 0.875rem;
+  outline: none;
+}
+
+
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: var(--primary-color);
+  
+}
+
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+}
+
+
+
+.submit-btn:hover {
+  /* background-color: var(--primary-color); */
+  background-color:#cccddc ;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+
+ 
+
+
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+
+.navbar {
+  background-color: #2d2d34;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+
+.navbar h1 {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  animation: slideIn 1s forwards;
+  gap: 5.9rem;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;   
+    transform: translateX(0);
+  }
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: color 0.3s;
+  display: flex;
+  /* justify-content: right; */
+  /* margin-right:; */
+}
+
+
+
+
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #000000;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #000000;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #cccddc;
+  border-left: 2px solid #000000;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
